@@ -3,7 +3,19 @@ import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
-import { Text } from 'react-native';
+import { Text, TextInput } from 'react-native';
+
+// ===== CONFIGURATION ACCESSIBILITÉ =====
+// Permet à l'utilisateur d'agrandir le texte via les paramètres Android
+// (Paramètres → Affichage → Taille de police)
+Text.defaultProps = Text.defaultProps || {};
+Text.defaultProps.allowFontScaling = true;
+Text.defaultProps.maxFontSizeMultiplier = 1.5; // Maximum 150% de la taille normale
+
+TextInput.defaultProps = TextInput.defaultProps || {};
+TextInput.defaultProps.allowFontScaling = true;
+TextInput.defaultProps.maxFontSizeMultiplier = 1.5;
+// ===== FIN CONFIGURATION =====
 
 import { AppProvider } from './src/context/AppContext';
 import DashboardScreen   from './src/screens/DashboardScreen';
