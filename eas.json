@@ -6,7 +6,10 @@
   "build": {
     "preview": {
       "android": {
-        "buildType": "apk"
+        "buildType": "apk",
+        "env": {
+          "NPM_CONFIG_LEGACY_PEER_DEPS": "true"
+        }
       }
     },
     "production": {
