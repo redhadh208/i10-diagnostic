@@ -18,10 +18,7 @@
         "android.permission.INTERNET"
       ]
     },
-    "plugins": [
-      ["react-native-bluetooth-classic",
-       {"bluetoothAlwaysPermission": "Allow i10 Diag Pro to connect to ELM327"}]
-    ],
+    "plugins": [],
     "extra": { "eas": { "projectId": "2d130594-7c2c-4ced-99e8-df7744224989" } }
   }
 }
