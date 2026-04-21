@@ -1,14 +1,19 @@
 {
   "expo": {
     "name": "i10 Diag Pro",
-    "slug": "i10-diag-pro",
+    "slug": "i10-diagno",
     "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
-    "splash": { "backgroundColor": "#050810" },
+    "splash": {
+      "backgroundColor": "#050810"
+    },
     "android": {
       "package": "com.i10diag.pro",
+      "adaptiveIcon": {
+        "backgroundColor": "#050810"
+      },
       "permissions": [
         "android.permission.BLUETOOTH",
         "android.permission.BLUETOOTH_ADMIN",
@@ -19,6 +24,10 @@
       ]
     },
     "plugins": [],
-    "extra": { "eas": { "projectId": "2d130594-7c2c-4ced-99e8-df7744224989" } }
+    "extra": {
+      "eas": {
+        "projectId": "2d130594-7c2c-4ced-99e8-df7744224989"
+      }
+    }
   }
 }
