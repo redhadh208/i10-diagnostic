@@ -23,7 +23,17 @@
         "android.permission.INTERNET"
       ]
     },
-    "plugins": [],
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34
+          }
+        }
+      ]
+    ],
     "extra": {
       "eas": {
         "projectId": "2d130594-7c2c-4ced-99e8-df7744224989"
