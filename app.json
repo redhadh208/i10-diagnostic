@@ -23,9 +23,7 @@
         "android.permission.INTERNET"
       ]
     },
-    "plugins": [
-      "./plugins/forceCompileSdk.js"
-    ],
+    "plugins": [],
     "extra": {
       "eas": {
         "projectId": "2d130594-7c2c-4ced-99e8-df7744224989"
