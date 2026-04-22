@@ -24,7 +24,7 @@
       ]
     },
     "plugins": [
-      "./plugins/withAndroidSdkVersion.js"
+      "./plugins/forceCompileSdk.js"
     ],
     "extra": {
       "eas": {
@@ -32,4 +32,5 @@
       }
     }
   }
+}
 }
