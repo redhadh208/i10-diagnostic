@@ -1,43 +1,20 @@
 {
   "expo": {
-    "name": "i10 Diag Pro",
-    "slug": "i10-diagno",
-    "version": "2.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "dark",
-    "splash": {
-      "backgroundColor": "#050810"
-    },
+    "name": "i10-project",
+    "slug": "i10-project",
+    "version": "1.0.0",
     "android": {
-      "package": "com.i10diag.pro",
-      "adaptiveIcon": {
-        "backgroundColor": "#050810"
-      },
-      "compileSdkVersion": 34,
-      "targetSdkVersion": 34,
-      "buildToolsVersion": "34.0.0",
+      "package": "com.votre_nom.i10project",
       "permissions": [
-        "android.permission.BLUETOOTH",
-        "android.permission.BLUETOOTH_ADMIN",
-        "android.permission.BLUETOOTH_CONNECT",
-        "android.permission.BLUETOOTH_SCAN",
-        "android.permission.ACCESS_FINE_LOCATION",
-        "android.permission.INTERNET"
+        "BLUETOOTH",
+        "BLUETOOTH_ADMIN",
+        "BLUETOOTH_CONNECT",
+        "BLUETOOTH_SCAN",
+        "ACCESS_FINE_LOCATION"
       ]
     },
     "plugins": [
-      [
-        "react-native-bluetooth-classic",
-        {
-          "bluetoothAlwaysPermission": "Allow i10 Diag Pro to connect to ELM327"
-        }
-      ]
-    ],
-    "extra": {
-      "eas": {
-        "projectId": "2d130594-7c2c-4ced-99e8-df7744224989"
-      }
-    }
+      ["react-native-bluetooth-classic", { "bluetoothConfig": { "isPeripheral": false } }]
+    ]
   }
 }
