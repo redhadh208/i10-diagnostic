@@ -14,6 +14,9 @@
       "adaptiveIcon": {
         "backgroundColor": "#050810"
       },
+      "compileSdkVersion": 34,
+      "targetSdkVersion": 34,
+      "buildToolsVersion": "34.0.0",
       "permissions": [
         "android.permission.BLUETOOTH",
         "android.permission.BLUETOOTH_ADMIN",
@@ -23,7 +26,14 @@
         "android.permission.INTERNET"
       ]
     },
-    "plugins": [],
+    "plugins": [
+      [
+        "react-native-bluetooth-classic",
+        {
+          "bluetoothAlwaysPermission": "Allow i10 Diag Pro to connect to ELM327"
+        }
+      ]
+    ],
     "extra": {
       "eas": {
         "projectId": "2d130594-7c2c-4ced-99e8-df7744224989"
